@@ -2,7 +2,10 @@ FROM node:latest
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get dist-upgrade -y
-RUN apt-get install -y sudo git nano wget curl ntp build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev git npm nodejs libminiupnpc-dev redis-server software-properties-common fail2ban
+RUN apt-get install -y sudo git nano wget curl ntp build-essential 
+RUN apt-get install -y libtool autotools-dev autoconf pkg-config libssl-dev 
+RUN apt-get install -y libboost-all-dev git npm nodejs libminiupnpc-dev 
+RUN apt-get install -y redis-server software-properties-common fail2ban
 
 
 RUN add-apt-repository ppa:bitcoin/bitcoin
